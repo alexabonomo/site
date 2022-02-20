@@ -1,0 +1,18 @@
+.bio{
+    color:green;
+}
+
+body{
+    color: blue;
+    font-family: Arial
+}
+
+section p{
+    color: orange;
+    line-height: normal;
+    font-family: Georgia;
+}
+
+#childhood p{
+    color: violet;
+}

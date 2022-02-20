@@ -1,0 +1,87 @@
+body{
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 20px;
+    background: #F1F1F1;
+    color: #0000FF;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    padding: 20px;
+}
+
+a{
+    font-family: 'EB Garamond', serif;
+    text-decoration: none;
+}
+li :visited{
+    color: #0000FF;
+}
+
+li :hover{
+    color: #FF00FF;
+}
+
+
+section{
+    width: 60%;
+    margin: auto;
+}
+
+article{
+    padding-top: 20%;
+}
+
+h1 {
+    font-size: 71.66px;
+    font-weight: 100;
+}
+
+h1 a {
+    font-size: 86px;
+    font-weight: 100;
+}
+
+h2, h3{
+    font-size: 41.47px;
+    font-weight: 100;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #FF00FF;
+}
+
+p{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+}
+
+li{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+}
+
+#isea-paper{
+    width: 100%;
+    background-color: #0000FF;
+}
+
+#isea-paper article{
+    width: 60%;
+    margin: auto;
+    color: #F1F1F1;
+}
