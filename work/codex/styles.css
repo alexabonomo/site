@@ -1,15 +1,13 @@
 body{
     font-family: 'EB Garamond', serif;
     font-style: italic;
-    font-size: 20px;
+    font-size: 1rem;
     background: #F1F1F1;
     color: #0000FF;
     margin: 0px;
     padding: 0px;
 }
 
-nav{
-}
 
 nav ul {
     display: flex;
@@ -17,7 +15,7 @@ nav ul {
 }
 
 nav ul li{
-    padding: 20px;
+    padding: 1rem;
 }
 
 a{
@@ -39,11 +37,11 @@ section{
 }
 
 article{
-    padding-top: 20%;
+    padding-top: 10%;
 }
 
 h1 {
-    font-size: 71.66px;
+    font-size: 5.972rem;
     font-weight: 100;
 }
 
@@ -70,6 +68,18 @@ p{
     font-weight: 300;
 }
 
+p a {
+    font-weight: 700; 
+    font-size: 1.44rem; 
+    font-style: bold; 
+    color: #FF00FF;
+    font-family: 'Roboto Mono', monospace;
+}
+
+p a:hover{
+    color:#F1F1F1;
+}
+
 li{
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
@@ -78,10 +88,29 @@ li{
 #isea-paper{
     width: 100%;
     background-color: #0000FF;
+    padding-bottom: 200px;
 }
 
 #isea-paper article{
     width: 60%;
     margin: auto;
     color: #F1F1F1;
+}
+
+
+@media (max-width: 600px){
+    section{
+        width: 90%;
+        margin: auto;
+    }
+
+    #isea-paper article{
+        width: 90%;
+        margin: auto;
+        color: #F1F1F1;
+    }
+
+    h1 {
+        font-size:3rem;
+    }
 }
