@@ -291,15 +291,6 @@ a:hover{
     border: #0000FF solid 1px;
 }
 
-.slidingDiv{
-    background-color: #FF00FF;
-    border: #0000FF solid 1px;
-    z-index: 1;
-}
-
-.show_hide{
-}
-
 .past-work-item h3{
     font-size: 2.073rem;
     font-weight: 200;
@@ -310,6 +301,30 @@ a:hover{
     font-weight: 100;
 }
 
+@media (max-width: 1400px){
+
+    .current-work{
+        width: 80%;
+        margin: auto;
+    }
+
+    .past-work{
+        width: 80%;
+        margin: auto;
+    }
+
+    .past-work-container{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+
+    .past-work-item{
+        margin-bottom: 1rem;
+    }
+
+}
+
 @media (max-width: 600px) {
 
     .current-work{
@@ -317,7 +332,8 @@ a:hover{
     }
 
     .past-work{
-        margin: 2rem;
+        width: 90%;
+        margin: auto;
     }
 
     .past-work-container{
@@ -326,6 +342,7 @@ a:hover{
     }
 
     .past-work-item{
+        padding: 2rem;
         margin-bottom: 1rem;
     }
 }
