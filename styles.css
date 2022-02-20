@@ -1,5 +1,4 @@
 
-
 body{
     font-family: 'EB Garamond', serif;
     font-style: italic;
@@ -8,12 +7,6 @@ body{
     color: #0000FF;
 }
 
-main{
-    
-}
-
-nav{
-}
 
 nav ul {
     display: flex;
@@ -36,7 +29,7 @@ li :hover{
 }
 
 #about {
-    padding: 40px;
+    padding: 2rem;
     display: flex;
     justify-content: flex-start;
 }
@@ -255,47 +248,46 @@ a:hover{
 .grid-container-talks{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin-top: 20px;
+    margin-top: 1rem;
 }
 
 #cv .grid-container-talks p{
-    font-size: 16.67px;
+    font-size: 0.694rem;
     padding-right: 80px;
 }
 
 .current-work{
-    margin: 60px;
+    margin: 3rem;
 }
 
 .current-work h1{
-    font-size: 71.66px;
+    font-size: 5.972rem;
     font-weight: 100;
 }
 
 .current-work h3{
-    font-size: 34.56px;
+    font-size: 2.986rem;
     font-weight: 200;
 }
 
 .past-work{
-    margin: 60px;
+    margin: 3rem;
 }
 
 .past-work h1{
-    font-size: 71.66px;
+    font-size: 5.972rem;
     font-weight: 100;
 }
 
 .past-work-container{
-    width: 1900px;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
+    grid-gap: 2%;
 }
 
 .past-work-item{
     padding: 50px;
-    height: 700px;
     border: #0000FF solid 1px;
 }
 
@@ -309,14 +301,31 @@ a:hover{
 }
 
 .past-work-item h3{
-    font-size: 34.56px;
+    font-size: 2.073rem;
     font-weight: 200;
 }
 
 .past-work-item p{
-    font-size: 16.67px;
+    font-size: 1rem;
     font-weight: 100;
 }
 
+@media (max-width: 600px) {
 
+    .current-work{
+        margin: 2rem;
+    }
 
+    .past-work{
+        margin: 2rem;
+    }
+
+    .past-work-container{
+        display: block;
+        width: 100%;
+    }
+
+    .past-work-item{
+        margin-bottom: 1rem;
+    }
+}
