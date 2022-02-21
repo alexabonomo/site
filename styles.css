@@ -81,22 +81,12 @@ li :hover{
     width: 687px;
 }
 
-#bio {
-}
-
-#bio-wrapper{
-    position:absolute;
-    top: 750px;
-    left: 520px;
-    min-width: 1500px;
-}
-
 #bio-about {
-    mix-blend-mode: hard-light;
-    padding: 2rem;
-    z-index: 1;
-    font-size: 3rem;
-    height: 400px;
+    font-size: 4rem;
+    font-style: normal;
+    margin: 2rem;
+    width: 90%;
+    padding-bottom: 200px;
 }
 
 #design-practice{
@@ -324,8 +314,6 @@ a:hover{
     }
     
     #thoughts {
-        position: relative;
-        top:400px;
         border: #0000FF solid 1px;
         height: 653px;
         width: 380px;
@@ -355,44 +343,13 @@ a:hover{
     }
     
     #myhead {
-        position: relative;
-        top:-600px;
-        left: -40px;
-        font-style: italic;
-        font-size: 3.486rem;
-        padding: 1rem;
-        margin-left: 1rem;
-    }
-    
-    #myhead p{
-        font-size: 20;
-    }
-    
-    #myhead h1{
-        line-height: 85%;
-        margin-top: -10px;
-        font-weight: 200;
-        width: 450px;
+        display: none;
     }
 
-    #bio{
+    #bio-about{
+        font-size: 1.5rem;
+        padding-bottom: 0px;
     }
-
-    #bio-wrapper{
-        position:absolute;
-        top: 1200px;
-        left: 30px;
-    }
-    
-    #bio-about {
-        position:absolute;
-        width: 400px;
-        border-style: none;
-        font-size: 2rem;
-    }
-
-
-
 
     #design-practice{
         display: none;
