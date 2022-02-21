@@ -82,36 +82,26 @@ li :hover{
 }
 
 #bio {
-    position: fixed;
-    background-color: #F1F1F1;
-    border: #0000FF solid 1px;
+}
+
+#bio-wrapper{
+    position:absolute;
+    top: 750px;
+    left: 520px;
+    min-width: 1500px;
+}
+
+#bio-about {
+    mix-blend-mode: hard-light;
+    padding: 2rem;
     z-index: 1;
-    top: 850px;
-    left: 600px;
-    width: 700px;
-    font-size: 20px;
-    margin: 40px;
-}
-
-#bio p {
-    padding: 20px;
-}
-
-#arrow-1{
-    position: absolute;
-    top: 1000px;
-    left: 350px;
-}
-
-#arrow-2{
-    position: absolute;
-    top: 1000px;
-    left: 1450px;
+    font-size: 3rem;
+    height: 400px;
 }
 
 #design-practice{
     position: absolute;
-    top: 1280px;
+    top: 110%;
     left: 35%;
     height: 1100px;
     font-size: 28.8px;
@@ -326,6 +316,87 @@ a:hover{
 }
 
 @media (max-width: 600px) {
+
+    #about {
+        padding: 2rem;
+        display: block;
+        justify-content: flex-start;
+    }
+    
+    #thoughts {
+        position: relative;
+        top:400px;
+        border: #0000FF solid 1px;
+        height: 653px;
+        width: 380px;
+        font-size: 20px;
+    }
+    
+    #thought-1{
+        position: relative;
+        top: 175px;
+        margin-left:85px;
+        width: 292px;
+        font-weight: 100;
+    }
+    #thought-2{
+        position: relative;
+        margin-left:15px;
+        top: 210px;
+        width: 189px;
+    }
+    
+    #thought-3{
+        position: relative;
+        margin-left: 180px;
+        top: 230px;
+        right:0px;
+        width: 184px;
+    }
+    
+    #myhead {
+        position: relative;
+        top:-600px;
+        left: -40px;
+        font-style: italic;
+        font-size: 3.486rem;
+        padding: 1rem;
+        margin-left: 1rem;
+    }
+    
+    #myhead p{
+        font-size: 20;
+    }
+    
+    #myhead h1{
+        line-height: 85%;
+        margin-top: -10px;
+        font-weight: 200;
+        width: 450px;
+    }
+
+    #bio{
+    }
+
+    #bio-wrapper{
+        position:absolute;
+        top: 1200px;
+        left: 30px;
+    }
+    
+    #bio-about {
+        position:absolute;
+        width: 400px;
+        border-style: none;
+        font-size: 2rem;
+    }
+
+
+
+
+    #design-practice{
+        display: none;
+    }
 
     .current-work{
         margin: 2rem;
