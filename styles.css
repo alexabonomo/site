@@ -83,12 +83,36 @@ li :hover{
 }
 
 #bio-about {
-    font-size: 4rem;
-    font-style: normal;
+    font-size: 2rem;
+    line-height: 2em;
     margin: 2rem;
     width: 90%;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
+
+#offering-one{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+}
+#offering-one-img{
+    position: absolute;
+    top: 64%;
+    left: 60%;
+}
+
+.hover-offering{
+    display: none;
+}
+
+#offering-one:hover .hover-offering {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    background-color: #F1F1F1;
+}
+
 
 #design-practice{
     position: absolute;
