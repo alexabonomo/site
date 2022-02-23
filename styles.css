@@ -11,6 +11,7 @@ body{
 nav ul {
     display: flex;
     list-style: none;
+    padding: 0px;
 }
 
 nav ul li{
@@ -232,7 +233,7 @@ a:hover{
 }
 
 #cv .grid-container-talks p{
-    font-size: 0.694rem;
+    font-size: 16.67px;
     padding-right: 80px;
 }
 
@@ -347,7 +348,7 @@ a:hover{
     }
 
     #bio-about{
-        font-size: 1.5rem;
+        font-size: 1.44rem;
         padding-bottom: 0px;
     }
 
