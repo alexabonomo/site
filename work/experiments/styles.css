@@ -21,6 +21,15 @@ nav ul li{
 a{
     text-decoration: none;
 }
+
+a:visited{
+    color: #0000FF;
+}
+
+a:hover{
+    color: #FF00FF;
+}
+
 li :visited{
     color: #0000FF;
 }
