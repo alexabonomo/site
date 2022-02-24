@@ -216,6 +216,17 @@ a:hover{
     padding-right: 80px;
 }
 
+.grid-container-work{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+}
+
+#cv .grid-container-work p{
+    font-size: 16.67px;
+    padding-right: 80px;
+}
+
 .grid-container-publications{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
