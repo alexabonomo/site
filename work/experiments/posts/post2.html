@@ -14,7 +14,6 @@
 
     <link href="styles.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="index.js"></script>
 
 </head>
 
@@ -37,12 +36,17 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
 <script>
-    let hr = 0;
-    let v = [];
-    let vx = 300;
-    let spacing = 200;
-    let h;
+    var n;
+    let card = ["The Fool", "The Magician", "The High Priestess", "The Empress", "The Emperor", "The Heirophant", "The Lovers", "The Chariot", "Strength", "The Hermit", "Wheel of Fortune", "Justice", "The Hanged Man", "Death", "Temperance", "The Devil", "The Tower", "The Star", "The Moon", "The Sun", "Judgement", "The World", "Ace of Cups", "Two of Cups", "Three of Cups", "Four of Cups", "Five of Cups", "Six of Cups", "Seven of Cups", "Eight of Cups", "Nine of Cups", "Ten of Cups", "Page of Cups", "Knight of Cups", "Queen of Cups", "King of Cups", "Ace of Pentacles", "Two of Pentacles", "Three of Pentacles", "Four of Pentacles", "Five of Pentacles", "Six of Pentacles", "Seven of Pentacles", "Eight of Pentacles", "Nine of Pentacles", "Ten of Pentacles", "Page of Pentacles", "Knight of Pentacles", "Queen of Pentacles", "King of Pentacles", "Ace of Swords", "Two of Swords", "Three of Swords", "Four of Swords", "Five of Swords", "Six of Swords", "Seven of Swords", "Eight of Swords", "Nine of Swords", "Ten of Swords", "Page of Swords", "Knight of Swords", "Queen of Swords", "King of Swords", "Ace of Wands", "Two of Wands", "Three of Wands", "Four of Wands", "Five of Wands", "Six of Wands", "Seven of Wands", "Eight of Wands", "Nine of Wands", "Ten of Wands", "Page of Wands", "Knight of Wands", "Queen of Wands", "King of Wands"];
+
+    let font;
+
+    function preload() {
+        font = loadFont('fonts/DKMariken.otf');
+    }
+
     function setup() {
+
         let desktopWidth = windowWidth / 1.5;
         let mobileWidth = windowWidth;
         let cnv = createCanvas(windowWidth * .99, windowHeight * .8);
@@ -50,44 +54,39 @@
             let cnv = createCanvas(mobileWidth, 400);
         }
         cnv.parent('sketch');
-        background(241);
+        background(0);
+
+        n = int(random(0, 77))
     }
 
     function draw() {
-        noStroke();
-        strokeWeight(0);
-        fill(241);
-        rect(width - 100, height - 100, 100, 100)
-        textSize(24);
-        fill(0);
-        text(hr, width - 60, height - 60)
+        selectCard();
     }
 
-    function mousePressed() {
-        h = random(200,240);
-        noFill();
-        stroke(random(0,100),random(0, 255),random(155, 255));
-        strokeWeight(2);
-        beginShape();
-        for (let i = 0; i < 8; i++) {
-            v[i] = createVector(vx + spacing * i + random(-50, 50), random(600, 800))
-            vertex(v[i].x, v[i].y);
-        }
-        endShape();
-        background(241, 40);
-        console.log(h)
-        hr++
+    function mouseClicked() {
+        n = int(random(0, 77))
     }
-
 
     function windowResized() {
         if (windowWidth < 600) {
             resizeCanvas(windowWidth * .99, windowHeight * .99);
+            background(0);
 
         }
         if (windowWidth > 600) {
             resizeCanvas(windowWidth * .99, windowHeight * .99);
+            background(0);
         }
+    }
+
+    function selectCard() {
+        background(0);
+        textSize(72);
+        textAlign(CENTER);
+        textFont(font);
+        fill(255);
+        text(card[n].toUpperCase(), width/2, height-100);
+        console.log(card[n])
     }
 </script>
 

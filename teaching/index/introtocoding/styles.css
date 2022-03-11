@@ -1,0 +1,26 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+    display: grid;
+    grid-template-columns:  minmax(min-content, 30%) 1fr;
+    height: 100vh;
+    color: blue;
+}
+header{
+    padding: 1.5em;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap: 1em;
+}
+
+section{
+    border: 1px solid blue;
+    padding: 1.5em;
+}
+
+section:hover{
+    background-color: greenyellow;
+}
