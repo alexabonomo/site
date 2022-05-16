@@ -20,7 +20,7 @@ body{
 }
 
 .everything{
-    max-width: 500px;
+    max-width: 450px;
     margin: 75px auto 50px;
     text-align: left;
     position: relative;
@@ -96,12 +96,14 @@ p{
     margin-bottom: 0.5em;
 }
 
+
 table {
     font-family: Pentameter Light;
     border-collapse: separate;
     text-indent: initial;
     border-spacing: 0px;
-    font-size: .7em;
+    font-size: .6em; 
+    
 }
 
 table p{
@@ -109,7 +111,7 @@ table p{
 }
 
 table.simple{
-    margin: 0.5em 0 1.25em;
+    margin: 0.25em 0 1em; 
 }
 
 table.simple th {
@@ -122,5 +124,5 @@ table.simple th {
 table.simple td, table.simple th {
     border: .25px solid #0000FF;
     border-collapse: collapse;
-    padding: 11px 12px 10px;
+    padding: 5px 5px 5px;
 }
