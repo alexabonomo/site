@@ -12,23 +12,62 @@
     font-family: Pentameter Light;
     src: url(fonts/Pentameter-Wide-Light-Trial.woff);
 }
+
+@font-face {
+    font-family: 'Helvetica Neue Light';
+    src: url(fonts/HelveticaNeue-Light.woff);
+    src: url(fonts/HelveticaNeue-Light.woff2);
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    src: url(fonts/HelveticaNeue-Bold.woff);
+    src: url(fonts/HelveticaNeue-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url(fonts/HelveticaNeue-Medium.woff);
+    src: url(fonts/HelveticaNeue-Medium.woff2);
+}
+
+.labryinth{
+    width: 100%;
+}
 body{
+    width: 75%;
+    margin: auto;
     background-color: #f1f1f1;
     color: #0000FF;
-    font-family: Pentameter Regular;
+    font-family: 'Pentameter Regular';
     font-size: 16px;
 }
 
+.bold{
+    font-family: 'Helvetica Neue Bold';
+    text-decoration: underline;
+}
+
 .everything{
-    max-width: 450px;
-    margin: 75px auto 50px;
     text-align: left;
     position: relative;
 }
 
-.everything .content{
-    border: 1px solid #0000FF;
-    padding: 24px;
+.info{
+    width: 90%;
+    display: flex;
+    gap: 2%;
+}
+
+.info p{
+    font-family: 'Helvetica Neue Light';
+    font-size: 1.9rem;
+    margin: 0;
+}
+
+#welcome >p{
+    font-family: 'Helvetica Neue Light';
+    font-size: 1.2rem;
 }
 
 a{
@@ -36,33 +75,42 @@ a{
     color: #0000FF;
 }
 
+a:visited{
+    color: #0000ff;
+}
+
 a :hover{
     text-decoration: underline;
 }
 
+ul{
+    padding: 0;
+}
+
 a.button{
+    font-family: 'HelveticaNeue-Light';
     display: inline-block;
     border: 1px solid rgba(0, 0, 255, .25) !important;
-    font-size: 0.75em;
+    font-size: 1.5em;
     letter-spacing: 0.1px;
     border-radius: 8px;
     padding: 5px 7px;
+    margin-left: -1%;
     transition: all ease 0.15s;
     margin-bottom: 3px;
 }
 
 a.button:hover{
     border: 1px solid rgba(255, 0, 255, 1) !important;
-    font-size: 0.75em;
+    font-size: 1.5rem;
 }
 
 li{
     list-style: none;
-    padding-left: 0.5em;
 }
 
 h1{
-    font-size: 2em;
+    font-size: 7rem;
     margin-bottom: 0.15em;
     margin-top: 0.05em;
 }
@@ -74,55 +122,64 @@ h2{
 }
 
 #motto{
-    font-family: Pentameter Italic;
-    font-size: 0.75em;
-    letter-spacing: -0.5px;
+    font-family: 'Helvetica Neue Light';
+    font-size: 1.5rem;
 }
 
-.accordian-body{
-    margin-left: 1em;
+.matter{
 }
+
 
 .matter>li{
     padding-bottom: 0.75em;
 }
 
 
-p{
-    font-family: Pentameter Italic;
-    font-size: 0.75em;
+.accordian-title {
+    font-family: 'Pentameter Italic';
+    font-size: 3rem;
     letter-spacing: -0.5px;
     margin-top: 0.35em;
     margin-bottom: 0.5em;
 }
 
+.matter p {
+    font-family: 'Helvetica Neue Light';
+    letter-spacing: normal;
+    font-size: 1.5rem;
+}
 
-table {
-    font-family: Pentameter Light;
-    border-collapse: separate;
-    text-indent: initial;
-    border-spacing: 0px;
-    font-size: .6em; 
+.line {
+    height: 12px;
+    border-bottom: solid 1px #0000ff;
+}
+
+
+@media only screen and (max-width: 600px) {
+    h1{
+        padding-top: 25px;
+        font-size: 4rem;
+        line-height: 3rem;
+    }
+
+    .labryinth{
+        width: 100%;
+    }
+
+    .info{
+        display: block;
+        gap: 0%;
+    }
     
-}
+    .info p{
+        padding-top: 15px;
+        font-family: 'Helvetica Neue Light';
+        font-size: 1rem;
+        margin: 0;
+    }
 
-table p{
-    font-size: 1em;
-}
-
-table.simple{
-    margin: 0.25em 0 1em; 
-}
-
-table.simple th {
-    text-align: center;
-    background: rgba(0, 0, 255, .1);
-    font-weight: normal;
-    font-size: 0.75em;
-}
-
-table.simple td, table.simple th {
-    border: .25px solid #0000FF;
-    border-collapse: collapse;
-    padding: 5px 5px 5px;
+    body{
+        width: 95%;
+        margin: auto;
+    }
 }
