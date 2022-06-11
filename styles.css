@@ -134,6 +134,9 @@ h2{
     padding-bottom: 0.75em;
 }
 
+.matter-item{
+    padding-top: 50px;
+}
 
 .accordian-title {
     font-family: 'Pentameter Italic';
@@ -174,7 +177,7 @@ h2{
     .info p{
         padding-top: 15px;
         font-family: 'Helvetica Neue Light';
-        font-size: 1rem;
+        font-size: .94rem;
         margin: 0;
     }
 
