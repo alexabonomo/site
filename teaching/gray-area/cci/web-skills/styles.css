@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 500px;
+    width: 100%;
+}
+
+.grid-item{
+    border: 1px solid black;
+    padding: 30px;
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+}
