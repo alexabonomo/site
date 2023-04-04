@@ -4,6 +4,7 @@ body{
     align-items: center;
 }
 
+
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -19,4 +20,19 @@ body{
 
 h1{
     margin: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body{
+        display: block;
+    }
+
+    .container{
+        display: block;
+    }
+
+    .grid-item{
+        height: 300px;
+    }
 }
