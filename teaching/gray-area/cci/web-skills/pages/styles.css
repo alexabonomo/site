@@ -36,15 +36,10 @@ h1{
 
 .flora pre{
     width: 100;
+    background-color: transparent;
 }
 
 code{
     background-color: #dedcdc;
     padding: 3px 7px;
-}
-
-pre{
-    background-color: #dedcdc;
-    padding: 3px 7px;
-    overflow-x: auto;
 }
