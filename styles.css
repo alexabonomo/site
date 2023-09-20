@@ -31,20 +31,17 @@
     src: url(fonts/HelveticaNeue-Medium.woff2);
 }
 
-.labryinth{
-    width: 100%;
-}
 body{
-    width: 1200px;
+    width: 500px;
     margin: auto;
+    padding-top: 100px;
     background-color: #f1f1f1;
-    color: #0000FF;
+    color: black;
     font-family: 'Pentameter Regular';
     font-size: 16px;
 }
 
 .bold{
-    font-family: 'Helvetica Neue Bold';
     text-decoration: underline;
 }
 
@@ -54,33 +51,26 @@ body{
 }
 
 .info{
-    width: 90%;
     display: flex;
     gap: 2%;
 }
 
 .info p{
-    font-family: 'Helvetica Neue Light';
-    font-size: 1.9rem;
     margin: 0;
 }
 
-#welcome >p{
-    font-family: 'Helvetica Neue Light';
-    font-size: 1.2rem;
-}
 
 a{
-    text-decoration: none;
-    color: #0000FF;
+    text-decoration: underline;
+    color: black;
 }
 
 a:visited{
-    color: #0000ff;
+    color: black;
 }
 
-a :hover{
-    text-decoration: underline;
+a:hover{
+    font-style: italic;
 }
 
 ul{
@@ -88,10 +78,7 @@ ul{
 }
 
 a.button{
-    font-family: 'HelveticaNeue-Light';
     display: inline-block;
-    border: 1px solid rgba(0, 0, 255, .25) !important;
-    font-size: 1.5em;
     letter-spacing: 0.1px;
     border-radius: 8px;
     padding: 5px 7px;
@@ -101,8 +88,7 @@ a.button{
 }
 
 a.button:hover{
-    border: 1px solid rgba(255, 0, 255, 1) !important;
-    font-size: 1.5rem;
+    font-style: italic;
 }
 
 li{
@@ -110,23 +96,13 @@ li{
 }
 
 h1{
-    font-size: 7rem;
     margin-bottom: 0.15em;
     margin-top: 0.05em;
 }
 
 h2{
-    font-size: 1.5em;
     margin-bottom: 0.15em;
     margin-top: 0.05em;
-}
-
-#motto{
-    font-family: 'Helvetica Neue Light';
-    font-size: 1.5rem;
-}
-
-.matter{
 }
 
 
@@ -138,30 +114,19 @@ h2{
     padding-top: 50px;
 }
 
-.accordian-title {
-    font-family: 'Pentameter Italic';
-    font-size: 3rem;
-    letter-spacing: -0.5px;
-    margin-top: 0.35em;
-    margin-bottom: 0.5em;
-}
-
 .matter p {
-    font-family: 'Helvetica Neue Light';
     letter-spacing: normal;
-    font-size: 1.5rem;
 }
 
 .line {
     height: 12px;
-    border-bottom: solid 1px #0000ff;
+    border-bottom: solid 1px black;
 }
 
 
 @media only screen and (max-width: 600px) {
     h1{
         padding-top: 25px;
-        font-size: 4rem;
         line-height: 3rem;
     }
 
@@ -176,13 +141,11 @@ h2{
     
     .info p{
         padding-top: 15px;
-        font-family: 'Helvetica Neue Light';
-        font-size: .94rem;
         margin: 0;
     }
 
     body{
-        width: 95%;
+        width: 400px;
         margin: auto;
     }
 }
