@@ -25,5 +25,4 @@ $(function () {
 //            $(this).next('.slidingDiv').show(); 
 //          }
 //     });
-
 // });
